@@ -1,0 +1,75 @@
+﻿<Window x:Class="CALCULATOR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CALCULATOR"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="GRID1">
+        <Button x:Name="BUTTON1" Width="135" Content="=" FontSize="105" Click="ButtonClick" HorizontalAlignment="Right" Margin="0,293,10,10" >
+            <Button.Background>
+                <SolidColorBrush Color="Red">
+                </SolidColorBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="One" Click="OneClick" Content=" 1" FontSize="40" Margin="72,118,628,247" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-78.445"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <SolidColorBrush Color="Blue"></SolidColorBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Two" Click="OneClick" Content="1" FontSize="40" Margin="80,229,644,134" Background="Blue" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-17.174"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Seven" Click="OneClick" Content="7" FontSize="40" Margin="75,305,657,69" Background="Blue"/>
+        <Button x:Name="Eleven" Click="OneClick" Content="11" FontSize="40" Margin="183,150,531,231" Background="Blue"/>
+        <Button x:Name="Twenty" Click="OneClick" Content="20" FontSize="40" Margin="183,217,531,153" Background="Blue"/>
+        <Button x:Name="Secret" Click="OneClick" Content="Secret" FontSize="40" Margin="183,305,492,10" Background="AliceBlue"/>
+        <Button x:Name="Five" Click="OneClick" FontSize="40" Margin="303,128,400,244" RenderTransformOrigin="0.5,0.5" Background="LemonChiffon">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-78.445"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="One_Копировать6" Click="OneClick" FontSize="40" Margin="308,206,407,166" RenderTransformOrigin="0.5,0.5" Background="Blue">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-78.445"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="One_Копировать7" Click="OneClick" FontSize="40" Margin="306,286,402,84" RenderTransformOrigin="0.5,0.5" Background="Green"  >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-78.445"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+</Window>
